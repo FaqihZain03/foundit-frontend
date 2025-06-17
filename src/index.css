@@ -1,0 +1,27 @@
+/* src/index.css */
+/* Minimal CSS Reset */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7fa; /* Warna latar belakang default */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex; /* Untuk memastikan App mengisi tinggi penuh jika diperlukan */
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Tambahan styling dasar */
+button {
+  cursor: pointer;
+}
