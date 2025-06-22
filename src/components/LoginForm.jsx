@@ -23,7 +23,7 @@ function LoginForm({ onLoginSuccess, users, onSwitchToRegister }) {
     // Logika Otentikasi
     const user = users.find(u => u.username === formData.username && u.password === formData.password);
     if (user) {
-      onLoginSuccess(true);
+      onLoginSuccess(true, user); // Pass user data
     } else {
       setError('Username atau password salah!');
     }
