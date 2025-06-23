@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pastikan ini ada dan persis seperti ini */
+html, body, #root {
+  height: 100%; /* Ubah min-height: 100vh menjadi height: 100% */
+  margin: 0;
+  padding: 0;
+}
+
+/* Jika Anda ingin font Poppins secara global, masukkan di body */
+body {
+  font-family: 'Poppins', sans-serif; /* Pindahkan font-family ke sini */
+  min-width: 320px;
+  min-height: 100vh; /* Ini opsional, tapi height: 100% di atas lebih penting */
+  /* PASTIKAN TIDAK ADA display: flex atau place-items: center DI SINI */
+}
+
+/* Ini untuk memastikan warna teks global adalah putih, kemudian bisa ditimpa oleh kelas Tailwind lain */
+body {
+  color: #fff; /* Tambahkan ini agar teks default di body menjadi putih */
+  background-color: #242424; /* Atau warna latar belakang default yang Anda inginkan */
+}
+
+
+/* Bagian :root yang sudah ada */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); <-- Ini bisa dihapus jika color: #fff di body sudah ada */
+  /* background-color: #242424; <-- Ini juga bisa dihapus jika background-color di body sudah ada */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sisanya dari index.css Anda (a, button, @media query) biarkan seperti semula */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
