@@ -80,7 +80,7 @@ const Login = () => {
                   </svg>
                 )}
               </button>
-            </div> {/* --- AKHIR DIV RELATIVE YANG BARU --- */}
+            </div> 
           </div>
           <button
             type="submit"
