@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gabungkan properti HTML, BODY, dan #ROOT */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gabungkan semua properti BODY di satu tempat */
+body {
+    font-family: 'Poppins', sans-serif; /* Font Poppins global */
+    min-width: 320px;
+    min-height: 100vh;
+    color: #fff; /* Teks default putih */
+    background-color: #242424; /* Latar belakang default gelap */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Hapus properti font-family dan background-color lain yang duplikat jika ada di bawah */
+}
+
+/* Pastikan #root diatur untuk flex jika diperlukan oleh App.jsx */
+#root {
+    min-height: 100vh; /* Penting untuk mengisi tinggi viewport */
+    display: flex; /* Biarkan ini jika App.jsx Anda memerlukannya untuk mengisi tinggi */
+    flex-direction: column;
+}
+
+/* Bagian :root yang sudah ada */
+:root {
+    /* Jika font-family sudah diatur di body, ini mungkin tidak perlu di sini */
+    /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    /* color: rgba(255, 255, 255, 0.87); <-- Ini bisa dihapus jika color di body sudah ada */
+    /* background-color: #242424; <-- Ini juga bisa dihapus jika background-color di body sudah ada */
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* Sisanya dari index.css Anda (a, button, @media query) biarkan seperti semula */
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+a:hover {
+    color: #535bf2;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Ini adalah media query untuk tema terang, penting untuk dipertahankan jika Anda ingin mendukung tema terang */
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547; /* Teks gelap untuk tema terang */
+        background-color: #ffffff; /* Latar belakang putih untuk tema terang */
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+}
