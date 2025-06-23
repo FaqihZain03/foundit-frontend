@@ -1,0 +1,212 @@
+.item-detail-section {
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .item-image-wrapper {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .item-image {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .item-info {
+    margin-top: 1.5rem;
+  }
+  
+  .item-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .item-description {
+    margin-top: 1rem;
+    color: #4b5563;
+  }
+  
+  .item-meta {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  .item-status {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-found {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-lost {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-back,
+  .btn-claim {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .btn-back {
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #374151;
+  }
+  
+  .btn-claim {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+  }
+  
+  .btn-back:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .btn-claim:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .divider {
+    margin: 2rem 0;
+    border-color: #e5e7eb;
+  }
+  
+  .item-comments {
+    margin-top: 1rem;
+  }
+  
+  .comments-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .error {
+    color: #dc2626;
+    font-size: 0.875rem;
+  }
+  
+  .text-muted {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .comments-list {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+  
+  .comment-card {
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  
+  .comment-user {
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  
+  .comment-date {
+    font-size: 0.75rem;
+    color: #9ca3af;
+  }
+  
+  .comment-content {
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  
+  .comment-actions {
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  
+  .comment-delete {
+    font-size: 0.75rem;
+    color: #ef4444;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comment-delete:hover {
+    text-decoration: underline;
+  }
+  
+  .comment-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .comment-input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+  }
+  
+  .comment-submit {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .comment-submit:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .status-claimed {
+    background-color: #ddd6fe;
+    color: #5b21b6;
+  }
+  
+  

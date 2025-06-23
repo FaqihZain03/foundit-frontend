@@ -1,0 +1,132 @@
+.comment-page {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .item-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .item-card:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .item-card.active {
+    border-color: #3b82f6;
+    background-color: #e0f2fe;
+  }
+  
+  .chat-section {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  }
+  
+  .chat-header {
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chat-message {
+    background: #f3f4f6;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chat-meta {
+    font-size: 0.8rem;
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  
+  .chat-text {
+    font-size: 0.95rem;
+    color: #111827;
+  }
+  
+  .chat-action {
+    text-align: right;
+    margin-top: 0.25rem;
+  }
+  
+  .chat-action button {
+    font-size: 0.75rem;
+    color: #dc2626;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chat-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .send-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 9999px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
