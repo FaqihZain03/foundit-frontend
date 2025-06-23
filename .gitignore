@@ -22,4 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 foundit-frontend/
+=======
+>>>>>>> d43f7e1e3a7a3095472bdc8e10ae1037dbdf2b2e
