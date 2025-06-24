@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar";
 import { getItems } from "../../_services/items";
 import ItemIndex from "./items/index";
 import CreateItemForm from "./items/create";
