@@ -28,3 +28,23 @@ export const deleteLocation = async (id) => {
     throw error;
   }
 };
+
+export const updateLocation = async (id, updatedData) => {
+  try {
+    const formData = new FormData();
+    formData.append("_method", "PUT");
+
+    Object.entries(updatedData).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+
+    const response = await API.post(`/locations/${id}`, formData, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Gagal mengupdate lokasi:", error.response?.data || error);
+    throw error;
+  }
+};

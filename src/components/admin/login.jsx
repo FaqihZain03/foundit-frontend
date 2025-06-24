@@ -18,8 +18,8 @@ const AdminLogin = ({ onLoginSuccess }) => {
       const res = await loginAdmin({ email, password });
       console.log("Login success", res);
   
-      localStorage.setItem("adminAccessToken", res.token);
-      localStorage.setItem("adminUserInfo", JSON.stringify(res.user));
+      localStorage.setItem("token", res.token); 
+      localStorage.setItem("userInfo", JSON.stringify(res.user));
   
       if (onLoginSuccess) {
         onLoginSuccess();

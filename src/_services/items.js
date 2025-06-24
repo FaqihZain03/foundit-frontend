@@ -75,5 +75,3 @@ export const claimItem = async (id) => {
     throw error;
   }
 };
-
-

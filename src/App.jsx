@@ -12,6 +12,11 @@ import CommentPage from './components/pages/Comment';
 // Admin
 import AdminLogin from './components/admin/login';
 import AdminDashboard from './components/admin/index';
+import AdminItemIndex from './components/admin/items/index';
+import AdminClaimIndex from './components/admin/claims/index';
+import AdminLocationIndex from './components/admin/locations/index';
+import AdminUserIndex from './components/admin/users/index';
+import AdminCommentIndex from './components/admin/comments/index';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,7 +27,7 @@ function App() {
   useEffect(() => {
     const savedUser = localStorage.getItem('user');
     const savedToken = localStorage.getItem('token');
-    const adminToken = localStorage.getItem('adminAccessToken'); // ✅ disamakan
+    const adminToken = localStorage.getItem('adminAccessToken');
 
     if (savedUser && savedToken) {
       setCurrentUser(JSON.parse(savedUser));
@@ -96,21 +101,13 @@ function App() {
       />
 
       {/* Admin */}
-      <Route
-        path="/admin"
-        element={<AdminLogin onLoginSuccess={handleAdminLoginSuccess} />}
-      />
-      <Route
-        path="/admin/dashboard"
-        element={
-          isAdminLoggedIn ? (
-            <AdminDashboard onLogout={handleAdminLogout} />
-          ) : (
-            <Navigate to="/admin" />
-          )
-        }
-      />
-
+      <Route path="/admin" element={<AdminLogin onLoginSuccess={handleAdminLoginSuccess} />} />
+      <Route path="/admin/dashboard" element={isAdminLoggedIn ? <AdminDashboard onLogout={handleAdminLogout} /> : <Navigate to="/admin" />} />
+      <Route path="/admin/items" element={isAdminLoggedIn ? <AdminItemIndex /> : <Navigate to="/admin" />} />
+      <Route path="/admin/claims" element={isAdminLoggedIn ? <AdminClaimIndex /> : <Navigate to="/admin" />} />
+      <Route path="/admin/locations" element={isAdminLoggedIn ? <AdminLocationIndex /> : <Navigate to="/admin" />} />
+      <Route path="/admin/users" element={isAdminLoggedIn ? <AdminUserIndex /> : <Navigate to="/admin" />} />
+      <Route path="/admin/comments" element={isAdminLoggedIn ? <AdminCommentIndex /> : <Navigate to="/admin" />} />
 
       {/* User Authenticated */}
       {isLoggedIn ? (

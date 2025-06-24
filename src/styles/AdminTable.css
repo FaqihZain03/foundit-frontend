@@ -1,0 +1,62 @@
+.admin-section {
+    background: #f9fafb;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .admin-search {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-add-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #f3f4f6;
+  }
+  
+  .admin-action-btn {
+    margin-right: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    background-color: #10b981;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .admin-action-btn.delete {
+    background-color: #ef4444;
+  }
+  
