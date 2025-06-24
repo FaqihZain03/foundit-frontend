@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../styles/admin.css";
+import "../../styles/Admin.css";
 import { loginAdmin } from "../../_services/auth";
 
 const AdminLogin = ({ onLoginSuccess }) => {
