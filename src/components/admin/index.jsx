@@ -21,7 +21,7 @@ import CommentIndex from "./comments/index";
 import CreateCommentForm from "./comments/create";
 import EditCommentForm from "./comments/edit";
 
-import "../../styles/admin.css";
+import "../../styles/Admin.css";
 import { itemImageSTORAGE } from "../../_api";
 
 const AdminDashboard = () => {
